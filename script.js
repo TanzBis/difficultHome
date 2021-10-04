@@ -1,36 +1,38 @@
-let num = 266219;
-let str = num.toString();
-let box = str.split("");
-let result = 1;
-  for (let i=0; i<box.length; i++) {
-    result = result*box[i];
-  }
-console.log((result));
-let end = result**3;
-console.log(end);
-console.log(String(end).slice(0, 2));
-
-let screens = "Простые, Сложные, Интерактивные".toLowerCase();
-console.log(screens.length);
-const forScreens = screens.split(", ");
-console.log(forScreens);
+'use strict'
 
 
+let personName = "Артем";
+let result;
 
+result = (personName = "Артем") ? 'Директор' :
+  (personName = "Александр") ? 'Преподаватель' :
+  'студент';
+console.log(result);
 
-
-
-
-if (request.status == 200) { // Убедиться в отсутствии ошибок
-  // Убедиться, что ответ  это XMLдокумент
-  if (request.getResponseHeader("Content-Type") == "text/xml") {
-  var doc = request.responseXML;
-  // Теперь обработать полученный документ
-  }
- }
+let lang = "en"; //Взависимости от того, что я тут пишу ru или en
+if (lang == "ru") {
+  console.log('Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
+}else if (lang == "en") {
+  console.log("Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday");
+}else {
+  console.log('произошла ошибка');
+} 
 
 
 
+let lang = 'ru'; //Тут точно так же
+switch (lang) {
+  case "ru":
+    console.log('Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
+    break;
+  case "en":
+    console.log('Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday');
+    break;
+}
 
-
-
+var lang = 'en';
+var myArray = {
+	'ru':['понедельник', 'вторник', 'среда','четверг', 'пятницы', 'суббота', 'воскресенье'],
+	'en':['Sunday','Monday', 'Tuesday', 'Wensdey', 'Thursday', 'Friday', 'Saturday'],
+};
+console.log(myArray[lang]);
