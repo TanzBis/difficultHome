@@ -2,11 +2,11 @@
 
 function AnnyStr(a) {
   if (typeof a != 'string') {
-  return "Вы ввели нестрочный тип";
+    return "Вы ввели нестрочный тип";
   }
   a = a.trim();
   if (a.length < 30) {
-  return a;
+    return a;
   }
   a = a.slice(0, 30) + '...';
   return a;
