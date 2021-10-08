@@ -1,6 +1,7 @@
 'use strict'
 
 function AnnyStr(a) {
+  a = a.trim();
   if (typeof a != 'string') {
   return "Вы ввели нестрочный тип";
   }
@@ -11,4 +12,4 @@ function AnnyStr(a) {
   return a;
 }
 
-console.log(AnnyStr("лороааа  аа а а аааалsыыыыыфыыыы"));
+console.log(AnnyStr("   лороааа  аа а а аааалsыыыыыфыыыы"));
