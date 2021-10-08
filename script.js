@@ -5,10 +5,10 @@ function AnnyStr(a) {
   return "Вы ввели нестрочный тип";
   }
   if (a.length < 30) {
-  return a;
+  return a.trim();
   }
   a = a.slice(0, 30) + '...';
-  return a;
+  return a.trim();
 }
 
-console.log(AnnyStr(" kljsfl  дфовап д").trim());
+console.log(AnnyStr(" выалпо фыдвао  "));
